@@ -22,6 +22,8 @@
     });
 </script>
 
+<script src="{{ mix('js/app.js') }}">/* vue.js */</script>
+
 <script> /* CASCADE FILL MATRIZ DE RISCOS */
     function cascadeselectid(){
         var idprocesso = document.getElementById("id_no_data_mapping").value;

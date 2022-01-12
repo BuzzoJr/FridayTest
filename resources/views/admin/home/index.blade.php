@@ -25,6 +25,10 @@
 </form>
 </div>
 
+<div id="app">
+  <button-vue></button-vue>
+</div>
+
 <div class="flex-container">
 <a class="card flex-child" href="{{route('admin.processos.index')}}">
 	<h4 class="text-chart">Processos:</h4>
@@ -65,6 +69,7 @@
     </div>
 </div>
 </div>
+
 <script>
 
     am4core.useTheme(am4themes_animated);
