@@ -38,15 +38,12 @@ class PdfController extends Controller
 
     public function index()
     {
+        $admiko_data['sideBarActive'] = "ripd";
+		$admiko_data["sideBarActiveFolder"] = "";
         
         $countaltos = MatrizDeRiscos::where('risco_inerente', 'Alto')->count();
         $countextremos = MatrizDeRiscos::where('risco_inerente', 'Extremo')->count();
 
-
-        $admiko_data['sideBarActive'] = "ripd";
-		$admiko_data["sideBarActiveFolder"] = "";
-        
-        
         return view("admin.ripd.index")->with(compact('admiko_data', 'countaltos', 'countextremos'));
     }
 }

@@ -25,7 +25,7 @@
 
     <div id="myDiv" style="display:none;" >
     <embed
-    src="https://friday.dev.br/test/public/admin/pdf"
+    src="https://friday.dev.br/teste/public/admin/pdf"
     type="application/pdf"
     frameBorder="0"
     scrolling="auto"

@@ -14,6 +14,9 @@
     var searchError = '{{trans('admiko.search_error')}}';
 </script>
 
+<!-- VUE.JS -->
+<script src="js/app.js"></script>
+
 <script> /*SELECT2*/
     $(document).ready(function() {
         $('.js-example-basic-multiple').select2({
@@ -21,8 +24,6 @@
         });   
     });
 </script>
-
-<script src="{{ mix('js/app.js') }}">/* vue.js */</script>
 
 <script> /* CASCADE FILL MATRIZ DE RISCOS */
     function cascadeselectid(){

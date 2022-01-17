@@ -31,3 +31,6 @@ Route::middleware('auth:admin')->group(function () {
     Route::get('admin/downloadpdf', [PdfController::class, 'downloadPdf'])->name('admin.downloadpdf.index');
     Route::get('admin/ripd', [PdfController::class, 'index'])->name('admin.ripd.index');
     });
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

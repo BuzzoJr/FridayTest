@@ -15,6 +15,9 @@
 @if(Gate::any(['mapa_de_calor_allow', 'mapa_de_calor_edit']))
 <li class="nav-item{{ $admiko_data['sideBarActive'] === "mapa_de_calor" ? " active" : "" }}"><a class="nav-link" href="{{route('admin.mapa_de_calor.index')}}"><i class="fas fa-map fa-fw"></i>Mapa de Calor</a></li>
 @endIf
-@if(Gate::any(['mapa_de_calor_allow', 'mapa_de_calor_edit']))
-<li class="nav-item{{ $admiko_data['sideBarActive'] === "ripd" ? " active" : "" }}"><a class="nav-link" href="{{route('admin.ripd.index')}}"><i class="fas fa-flag fa-fw"></i>Relatório de Impacto</a></li>
-@endif
+@if(Gate::any(['ripd_allow', 'ripd_edit']))
+<li class="nav-item{{ $admiko_data['sideBarActive'] === "ripd" ? " active" : "" }}"><a class="nav-link" href="{{route('admin.ripd.index')}}"><i class="fas fa-file-alt fa-fw"></i>Relatório de Impacto</a></li>
+@endIf
+@if(Gate::any(['repositrio_allow', 'repositrio_edit']))
+<li class="nav-item{{ $admiko_data['sideBarActive'] === "repositrio" ? " active" : "" }}"><a class="nav-link" href="{{route('admin.repositrio.index')}}"><i class="fas fa-box fa-fw"></i></i>Repositório de Politicas</a></li>
+@endIf

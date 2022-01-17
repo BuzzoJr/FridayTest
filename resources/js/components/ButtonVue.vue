@@ -1,15 +1,6 @@
 <template>
-<div id="example-1">
-    <button v-on:click="counter += 1">Adiciona 1</button>
-    <p>Quantas vezes o botão acima foi clicado: {{ counter }}</p>
-</div>
+<h3>Vue.js</h3>
 </template>
 
 <script>
-var example1 = new Vue({
-  el: '#example-1',
-  data: {
-    counter: 0
-  }
-})
 </script>

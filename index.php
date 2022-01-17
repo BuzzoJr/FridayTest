@@ -1,4 +1,4 @@
 <?php
-header("Location: https://friday.dev.br/test/public/admin");
+header("Location: https://friday.dev.br/teste/public/admin");
 die();
 ?>
