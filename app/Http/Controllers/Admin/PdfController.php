@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
-use Illuminate\Http\Request;
-use App\Models\Admin\MatrizDeRiscos;
 use App\Http\Controllers\Controller;
+use App\Models\Admin\MatrizDeRiscos;
+use Illuminate\Http\Request;
+use App\Http\Requests\Admin\RipdRequest;
 use Gate;
 use PDF;
 
@@ -43,6 +43,7 @@ class PdfController extends Controller
         
         $countaltos = MatrizDeRiscos::where('risco_inerente', 'Alto')->count();
         $countextremos = MatrizDeRiscos::where('risco_inerente', 'Extremo')->count();
+        dd(Gate::any());
 
         return view("admin.ripd.index")->with(compact('admiko_data', 'countaltos', 'countextremos'));
     }
