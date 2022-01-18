@@ -49,13 +49,17 @@
                 <div class="row cardElements pagination_js_data">
                     @foreach($tableData as $data)
                     <div class="rowElement col-12 col-md-6 col-xxl-4 mb-4">
-                        <div class="card h-100">
+                        <div class="card h-100 card-body-reposi">
                             <div class="row g-0 h-100">
                                 <div class="col-12">
                                     <div class="card-body d-flex flex-column justify-content-between h-100">
                                         <div class="card-body-items">
-											<div class="pb-1 search-js-nome">{{$data->nome}}</div>
-											<div class="pb-1 search-js-descrio card-body-title">{{$data->descrio}}</div>
+											<div class="pb-1 search-js-nome card-body-title">{{$data->nome}}</div>
+											<div class="pb-1 search-js-descrio">{{$data->descrio}}</div>
+                                            <div class="link-reposi-box">
+                                                <br>
+                                            <a href="https://friday.dev.br/teste/public/upload/{{$data->arquivo}}" target="_blank" class="link-reposi">{{$data->arquivo}}</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
